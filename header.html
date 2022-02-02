@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/headerfooter.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="js/index.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav>
+    <div class="wrapper">
+      <div id="logo"><a href="index.html"><img src="./assets/images/dfff.png" alt="img" /></a></div>
+      <div id="bars"><a href="javascript:void(0);" onclick="openNav()">
+          <i class="fa fa-2x fa-bars"></i></a></div>
+      <ul class="menu-content">
+        <li><a href="#">our services &nbsp;<i class="fas fa-caret-down"></i></a>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <header>WEB DESIGN & DEVELOPMENT</header>
+                <ul class="list">
+                  <li><a href="#">Custom Web Design UI/UX</a></li>
+                  <li><a href="#">Website Development</a></li>
+                  <li><a href="#">Web Application</a></li>
+                  <li><a href="#">Wordpress Website</a></li>
+                  <li><a href="#">Webstie Maintinance</a></li>
+                  <li><a href="#">CMS development</a></li>
+                  <li><a href="#">e commerece development intigration and platform </a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>DIGITAL MARKETING</header>
+                <ul class="list">
+                  <li><a href="#">Search Engine Optimization (SEO)</a></li>
+                  <li><a href="#">Pay-Per-Click (PPC)</a></li>
+                  <li><a href="#">Social Media Marketing</a></li>
+                  <li><a href="#">Content Marketing</a></li>
+                  <li><a href="#">Assesment & Optimization</a></li>
+                  <li><a href="#">Digital & Print PR</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>ECOMMERCE SERVICES</header>
+                <ul class="list">
+                  <li><a href="#">New Account Creation</a></li>
+                  <li><a href="#">Online Store Development</a></li>
+                  <li><a href="#">Cataloguing</a></li>
+                  <li><a href="#">Store Assesment & Optimization</a></li>
+                  <li><a href="#">Ecom Store Handling</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">contact us</a></li>
+        <li><a href="#">pricing &nbsp;<i class="fas fa-caret-down"></i></a>
+          <ul class="drop-menu">
+            <li><a href="web.html">WEB DESIGN & DEVELOPMENT</a></li>
+            <li><a href="digital.html">DIGITAL MARKETING</a></li>
+            <li><a href="Ecom.html">ECOMMERCE SERVICES</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fab fa-2x fa-facebook-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-2x fa-instagram-square"></i></a></li>
+        <li><a href="#"><i class="fab fa-2x fa-whatsapp-square"></i></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- mobile-navigation-menu -->
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="margin-bottom: 20px;">&times;</a>
+    <button class="dropdown-btn">our services &nbsp;<i class="fas fa-caret-down"></i></button>
+    <div class="dropdown-container">
+      <button class="dropdown-btn">WEB DESIGN & DEVELOPMENT &nbsp;<i class="fas fa-caret-down"></i></button>
+      <div class="dropdown-container">
+        <a href="#">Custom Web Design UI/UX</a>
+        <a href="#">Website Development</a>
+        <a href="#">Web Application</a>
+        <a href="#">Wordpress Website</a>
+        <a href="#">Webstie Maintinance</a>
+        <a href="#">CMS development</a>
+
+      </div>
+
+      <button class="dropdown-btn">DIGITAL MARKETING <i class="fas fa-caret-down"></i></button>
+      <div class="dropdown-container">
+        <a href="#">Search Engine Optimization (SEO)</a>
+        <a href="#">Pay-Per-Click (PPC)</a>
+        <a href="#">Social Media Marketing</a>
+        <a href="#">Content Marketing</a>
+        <a href="#">Assesment & Optimization</a>
+        <a href="#">Digital & Print PR</a>
+      </div>
+
+      <button class="dropdown-btn">ECOMMERCE SERVICES &nbsp;<i class="fas fa-caret-down"></i></button>
+      <div class="dropdown-container">
+        <a href="#">New Account Creation</a>
+        <a href="#">Online Store Development</a>
+        <a href="#">Cataloguing</a>
+        <a href="#">Store Assesment & Optimization</a>
+        <a href="#">Ecom Store Handling</a>
+      </div>
+    </div>
+    <a href="#">about us</a>
+    <a href="#">portfolio</a>
+    <a href="#">contact us</a>
+    <button class="dropdown-btn">pricing &nbsp;<i class="fas fa-caret-down"></i></button>
+    <div class="dropdown-container">
+      <a href="#">WEB DESIGN & DEVELOPMENT</a>
+      <a href="#">DIGITAL MARKETING</a>
+      <a href="#">ECOMMERCE SERVICES</a>
+    </div>
+    <h2>Follow Us On:</h2>
+    <a href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+    <a href="#"><i class="fab fa-2x fa-instagram-square"></i></a>
+    <a href="#"><i class="fab fa-2x fa-whatsapp-square"></i></a>
+  </div>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "350px";
+    }
+
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("wactive");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>

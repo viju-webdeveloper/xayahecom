@@ -1,0 +1,1015 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: serif;
+    background-color: #1A1A1A;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+main{
+    margin-top: 50px;
+    background-color: #151515;
+    width: 100%;
+    user-select: none;  
+}
+
+.front{
+    display: block;
+    background: url("../images/4.ECOMMERCE/hero-section/letter_16.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 93vh;
+    user-select: none;
+    color: white;
+}
+
+.front h1{
+    display: block;
+    width: 70%;
+    font-size: 70px;
+    font-weight: bolder;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+
+.front h1:first-letter{
+    display: block;
+    font-size: 90px;
+    position: relative;
+    text-shadow: 2px 2px black;
+}
+
+.front h1 span{
+    animation: animate 3s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animate {
+    0%   {color: #292929;}
+    25%  {color: #606569;}
+    50%  {color: #eec201;}
+    75%  {color: #bb0116;}
+    100% {color: #a45e5f;}
+  }
+
+
+.front p{
+    font-size: 50px;
+    display: block;
+    width: 50%;
+    font-weight: 700;
+    padding-left: 2%;
+}
+
+@media only screen and (max-width: 750px){
+    .front h1{
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .front p{
+        font-size: 25px;
+    }
+
+}
+
+/* store support section */
+
+.store{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 750px;
+}
+
+.store section{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.store section p{
+    display: block;
+    width: 50%;
+    height: 100%;
+    float: left;
+    left: 0;
+    font-size: 18px;
+    background-color: #FFCC1F;
+    color: black;
+    text-align: center;
+}
+
+.store section p span{
+    font-size: 30px;
+}
+
+.store section img{
+    width: 50%;
+    height: 100%;
+}
+
+.store section:last-child p{
+    background: #FF743E;
+}
+
+.store section:last-child img{
+    float: left;
+    left: 0;
+    position: relative;
+}
+
+/* services section */
+
+.eservices{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+}
+
+.eservices header{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 47px;
+    color: white;
+}
+
+.eservices section{
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.eservices section #eone{
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+.eservices section .headbutton{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+}
+
+
+.eservices section .headbutton header{
+    color: black;
+    margin-top: 5%;
+    height: 60%;
+}
+
+.eservices section .headbutton button{
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-left: 32%;
+    padding: 0;
+}
+
+.eservices section .headbutton button a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    z-index: 0;
+    position: relative;
+    background-color: #F74E5C;
+    /* border-radius: 25px; */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.eservices section .headbutton button a::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(42, 87, 235); */
+    /* background-color: #FFD700; */
+    background-image: linear-gradient(red, yellow, green );
+    /* background-image: linear-gradient(#F74E5C 30%, yellow 40%, green ); */
+    transform: scaleY(0);
+    transition: 0.4s ease;
+
+}
+
+.eservices section .headbutton button a:hover::after{
+    transform: scaleY(1);
+}
+
+.eservices section img {
+    width: 40%;
+    height: 100%;
+    position: absolute;
+}
+
+.eservices section #eone img {
+    right: 5%;
+    }
+
+.eservices section #eone .headbutton{
+    left: 0;
+    }
+
+
+    .eservices section #etwo{
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+    
+    }
+
+
+    .eservices section #etwo img {
+        left: 5%;
+        }
+    
+    .eservices section #etwo .headbutton{
+        right: 0;
+        }
+
+
+        .eservices section #ethree{
+            display: block;
+            width: 80%;
+            height: 100%;
+            position: relative;
+            background-color: white;
+            border-radius: 20px;
+        
+        }
+    
+    
+        .eservices section #ethree img {
+            right: 5%;
+            width: 45%;
+            }
+        
+        .eservices section #ethree .headbutton{
+            left: 0;
+            }
+
+            .eservices section #efour{
+                display: block;
+                width: 80%;
+                height: 100%;
+                margin-left: 20%;
+                position: relative;
+                background-color: white;
+                border-radius: 20px;
+            
+            }
+        
+        
+            .eservices section #efour img {
+                left: 5%;
+                width: 45%;
+                }
+            
+            .eservices section #efour .headbutton{
+                right: 0;
+                }
+
+    .eservices section #efive{
+        display: block;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+    
+    }
+
+
+    .eservices section #efive img {
+        right: 5%;
+        }
+    
+    .eservices section #efive .headbutton{
+        left: 0;
+        }
+
+    .eservices section #esix{
+        display: block;
+        width: 80%;
+        height: 100%;
+        margin-left: 20%;
+        position: relative;
+        background-color: white;
+        border-radius: 20px;
+    
+    }
+
+
+    .eservices section #esix img {
+        left: 5%;
+        }
+    
+    .eservices section #esix .headbutton{
+        right: 0;
+        }
+
+
+  /* Slideshow container */
+  .slideshow-container {
+    box-sizing: border-box;
+    max-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    background-color: #1A1A1A;
+  }
+  .slideshow-container header{
+      display: block;
+      width: 50%;
+      position: absolute;
+      font-weight: bolder;
+      top: 10px;
+      z-index: 1;
+      left: 0;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100vw;
+    height: 400px;
+    background-color: #FFE9C5;
+  }
+
+  .slideshow-container .first{
+    background-color: #B8BCFC;
+  }
+
+
+  .slideshow-container .last{
+      background-color: #E2B1C4;
+  }
+
+  .mySlides img{
+      position: absolute;
+      top: 0;
+      right: 0;
+  }
+
+
+  .mySlides p{
+      position: absolute;
+      left: 5%;
+      top: 30%;
+    width: 40%;
+    float: right;
+    display: block;
+    padding-right: 20px;
+    padding-left: 30px;
+  }
+
+  .mySlides p span{
+      font-size: 25px;
+      font-weight: bold;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1} 
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  /* about our premium service section */
+
+  .premium{
+      margin-top: 50px;
+      width: 100%;
+      height: 400px;
+      color: white;
+      position: relative;
+      background-color: #242121;
+  }
+
+  .premium img{
+      width: 30%;
+      height: 500px;
+      position: absolute;
+      top: -23%;
+      left: 14.6%;
+  }
+
+  .premium section{
+      display: block;
+      position: absolute;
+      right: 10%;
+      text-align: center;
+      top: 5%;
+      width: 65%;
+      float: right;
+
+  }
+
+  .premium section header{
+      font-size: 40px;
+      margin-right: 5%;
+      padding-bottom: 10px;
+  }
+
+
+
+
+  /* platform we serve section */
+
+  .platform{
+      width: 100%;
+      height: 650px;
+      background-image: url('../images/4.ECOMMERCE/platform\ we\ serve\ background.png');
+      background-size: 100% 100%;
+  }
+
+  .platform header{
+      display: block;
+      width: 100%;
+      font-size: 51px;
+      text-align: center;
+  }
+
+
+  .platform img{
+      margin: 20px;
+      width: 150px;
+      
+  }
+
+
+
+  /* someting about us section */
+
+  .aboutour{
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+    
+  }
+   
+
+  .aboutour header{
+      font-size: 51px;
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .aboutour section{
+      display: block;
+      width: 100%;
+      padding-top: 50px;
+
+  }
+
+  .aboutour section p{
+      display: block;
+      margin: 10px auto;
+      width: 70%;
+      font-size: 16px;
+      text-align: center;
+  }
+
+  .aboutour section p span{
+      font-size: 21px;
+      font-weight: bold;
+  }
+
+
+  /* our team is always with you section */
+
+  .ourteam{
+      width: 100%;
+      margin-top: 40px;
+      color: white;
+      background-color: #242121;
+      height: 420px;
+      position: relative;
+  }
+
+  .ourteam p{
+      display: block;
+      width: 70%;
+      font-size: 16px;
+      line-height: 16px;
+      position: absolute;
+      left: 2%;
+      height: 100%;
+      top: 0;
+
+  }
+
+  .ourteam p span{
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  .ourteam img{
+      width: 50%;
+      height: 75%;
+      position: absolute;
+      top: 12%;
+      right: 0;
+
+  }
+
+
+  /* our ecommerce account management section */
+
+  .ecomacount{
+      width: 100%;
+      height: 650px;
+      margin-top: 80px;
+      overflow: hidden;
+      color: black;
+      position: relative;
+      z-index: 0;
+      background-image: url('../images/4.ECOMMERCE/management\ services.jpg');
+      background-size: 100% 100%;
+  }
+
+  .ecomacount p{
+      display: block;
+      width: 70%;
+      text-align: left;
+      position: absolute;
+      left: 8%;
+      font-size: 16px;
+      line-height: 19px;
+      z-index: 1;
+      top: 0;
+      height: 100%;
+      color: black;
+
+  }
+
+  .ecomacount p span{
+      font-size: 40px;
+      line-height: 45px;
+      font-weight: bolder;
+  }
+
+
+  /* How is our Ecommerce management different section */
+
+  .howsection{
+      width: 100%;
+      margin-top: 100px;
+      color: white;
+  }
+
+  .howsection header{
+      display: block;
+      width: 80%;
+      margin: 20px auto;
+      text-align: center;
+      font-size: 45px;
+  }
+
+  .howsection section{
+      width: 100%;
+      height: 300px;
+      display: flex;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+  }
+
+  .howsection section .ecomhow-one{
+      width: 50%;
+      height: 100%;
+      position: relative;
+      background: #3F3F3F;
+      overflow: hidden;
+  }
+
+  .howsection section .ecomhow-one p{
+      display: block;
+      position: absolute;
+      text-align: left;
+      width: 45%;
+      font-size: 18px;
+      height: 90%;
+      left: 5%;
+      top: 10%;
+  }
+
+  .howsection section .ecomhow-one img{
+      width: 45%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+
+  }
+
+  .howsection section .ecomhow-two{
+    width: 50%;
+    height: 100%;
+    color: black;
+    position: relative;
+    background: white;
+}
+
+.howsection section .ecomhow-two p{
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    font-size: 18px;
+    height: 90%;
+    right: 5%;
+    top: 10%;
+}
+
+.howsection section .ecomhow-two img{
+    width: 45%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+.howsection section span{
+    font-size: 30px;
+    display: block;
+    height: 50px;
+}
+
+.howsection section .ecomhow-three{
+    width: 50%;
+    height: 100%;
+    color: black;
+    position: relative;
+    background: white;
+}
+
+.howsection section .ecomhow-three p{
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    font-size: 18px;
+    height: 90%;
+    left: 5%;
+    top: 10%;
+}
+
+.howsection section .ecomhow-three img{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
+}
+
+.howsection section .ecomhow-four{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background: #3F3F3F;
+}
+
+.howsection section .ecomhow-four p{
+    display: block;
+    position: absolute;
+    text-align: left;
+    width: 45%;
+    font-size: 18px;
+    height: 90%;
+    right: 5%;
+    top: 10%;
+}
+
+.howsection section .ecomhow-four img{
+    width: 45%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+
+}
+
+
+/* ECOM WHY COOSE US SECTION  */
+
+.eWHYUS{
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+}
+
+
+.eWHYUS header{
+    font-size: 51px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.eWHYUS .ewhyussection{
+    display: flex;
+    margin: 50px auto;
+    width: 90%;
+    height: 400px;
+
+}
+
+.eWHYUS .ewhyussection section{
+    width: 19%;
+    display: block;
+    height: 100%;
+    position: relative;
+    margin-right: 1%;
+}
+
+.eWHYUS .ewhyussection section img{
+    width: 95%;
+    height: 40%;
+    position: absolute;
+    top: 2%;
+    transition: 0.4s ease;
+}
+
+.eWHYUS .ewhyussection section img:hover{
+    top: 0%;
+}
+
+.eWHYUS .ewhyussection section p{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 18px;
+}
+
+
+
+
+
+
+/* frequently asked question */
+
+.faq{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  
+  }
+  
+  .faq header{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 13px;
+    transition: 0.4s;
+    height: auto;
+    left: 0;
+  }
+  
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 10px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .eactive, .accordion:hover {
+    background-color: rgba(20, 18, 18, 0.774);
+    color: white;
+  }
+  
+  .eactive:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+  
+  .eactive:after, .accordion{
+    background-color: white;
+    color: black;
+  }
+  
+  .eactive:hover{
+    color: rgba(253, 246, 246, 0.849);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .faq{
+      width: 100%;
+    }
+  
+  }
+  
+  @media only screen and (min-width: 600px) and (max-width :900px){
+    .faq{
+      width: 90%;
+    }
+  }
+
+
+
+
+    /* form */
+
+
+.contactus{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-color: #57B8FF;
+    color: black;
+    font-family: fantasy;
+    margin-top: 50px;
+}
+
+
+.contactus img{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+.contactus p{
+    display: block;
+    width: 55%;
+    position: absolute;
+    left: 5%;
+    font-size: 28px;
+    top: 0;
+}
+
+
+.contactus p span{
+    font-size: 51px;
+    line-height: 10px;
+}
+
+
+.contactus h3{
+    width: 45%;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    font-size: 38px;
+
+}
+
+.contactus button{
+    position: absolute;
+    bottom: 8%;
+    left: 35%;
+    border: none;
+    padding: 0;
+    border-radius: 25px;
+  }
+  
+  .contactus button a{
+    background-color: #F92323;
+    position: relative;
+    padding: 8px 20px;
+    z-index: 0;
+    display: block;
+    color: black;
+    font-size: 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.4s ease;
+  }
+  
+  .contactus button a::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #fff45f;
+    top: 0;
+    left: 0;
+    transform: scaleY(0);
+    transition: 0.4s ease;
+  }
+  
+  
+  .contactus button a:hover::after{
+    transform: scaleY(1);
+  }
