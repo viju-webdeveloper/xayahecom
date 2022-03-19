@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 body{
-    width: 100%;
+    width: 100vw;
     max-width: 1440px;
-    min-width: 1040px;
     margin: auto;
     padding: 0%;
     overflow-x: hidden;
@@ -24,23 +23,24 @@ main{
 }
 
 .front{
-    display: block;
     background: url("../images/4.ECOMMERCE/hero-section/letter_16.jpg");
     background-size: 100% 100%;
     width: 100%;
     height: 93vh;
-    max-height: 650px;
+    max-height: 630px;
     user-select: none;
     color: white;
+    box-sizing: border-box;
 }
 
 .front h1{
     display: block;
     width: 70%;
-    font-size: 70px;
+    font-size: 67px;
+    margin: 0;
     font-weight: bolder;
     padding-top: 5%;
-    padding-left: 4%;
+    padding-left: 3%;
 }
 
 
@@ -51,7 +51,7 @@ main{
     text-shadow: 2px 2px black;
 }
 
-.front h1 span{
+/* .front h1 span{
     animation: animate 3s ease infinite;
     animation-fill-mode: forwards;
 }
@@ -62,29 +62,20 @@ main{
     50%  {color: #eec201;}
     75%  {color: #bb0116;}
     100% {color: #a45e5f;}
-  }
+  } */
 
 
 .front p{
     font-size: 51px;
     display: block;
-    margin-top: 100px;
-    width: 45%;
+    width: 50%;
     font-weight: 700;
-    padding-left: 4%;
+    margin-top: 120px;
+    padding-left: 3%;
 }
 
-@media only screen and (max-width: 750px){
-    .front h1{
-        font-size: 40px;
-        width: 80%;
-    }
 
-    .front p{
-        font-size: 25px;
-    }
 
-}
 
 /* store support section */
 
@@ -92,7 +83,7 @@ main{
     width: 100%;
     margin: 0;
     padding: 0;
-    height: 750px;
+    height: 900px;
 }
 
 .store section{
@@ -103,12 +94,15 @@ main{
 }
 
 .store section p{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 50%;
     height: 100%;
     float: left;
     left: 0;
-    font-size: 18px;
+    font-size: 16px;
     background-color: #FFCC1F;
     color: black;
     text-align: center;
@@ -131,6 +125,37 @@ main{
     float: left;
     left: 0;
     position: relative;
+}
+
+
+@media only screen and (min-width: 1300px){
+    .front h1{
+        padding: 0;
+        margin-left: 5.8%;
+        padding-top: 75px;
+    }
+
+    .front p{
+        padding: 0;
+        margin-left: 5.8%;
+        width: 37%;
+        margin-top: 110px;
+        font-weight: 500;
+    }
+
+    .store section p{
+        box-sizing: border-box;
+        padding: 10px 30px;
+    }
+
+    .store{
+        height: 1000px;
+    }
+
+    .store section p span{
+        font-size: 38px;
+        padding-bottom: 50px;
+    }
 }
 
 
@@ -180,7 +205,7 @@ main{
 .eservices section .headbutton header{
     color: black;
     margin-top: 5%;
-    height: 60%;
+    height: 50%;
 }
 
 .eservices section .headbutton button{
@@ -188,7 +213,8 @@ main{
     border: none;
     border-radius: 25px;
     overflow: hidden;
-    margin-left: 32%;
+    margin-left: 50%;
+    transform: translateX(-50%);
     padding: 0;
 }
 
@@ -242,7 +268,47 @@ main{
     }
 
 
-    .eservices section #etwo{
+.eservices section #etwo{
+    display: block;
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+
+}
+
+
+.eservices section #etwo img {
+    left: 5%;
+    }
+
+.eservices section #etwo .headbutton{
+    right: 0;
+    }
+
+.eservices section #ethree{
+    display: block;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+
+}
+    
+
+    .eservices section #ethree img {
+        right: 5%;
+        width: 45%;
+        }
+    
+    .eservices section #ethree .headbutton{
+        left: 0;
+        }
+
+    .eservices section #efour{
         display: block;
         width: 80%;
         height: 100%;
@@ -252,57 +318,16 @@ main{
         border-radius: 20px;
     
     }
-
-
-    .eservices section #etwo img {
+        
+        
+    .eservices section #efour img {
         left: 5%;
+        width: 45%;
         }
     
-    .eservices section #etwo .headbutton{
+    .eservices section #efour .headbutton{
         right: 0;
         }
-
-
-        .eservices section #ethree{
-            display: block;
-            width: 80%;
-            height: 100%;
-            position: relative;
-            background-color: white;
-            border-radius: 20px;
-        
-        }
-    
-    
-        .eservices section #ethree img {
-            right: 5%;
-            width: 45%;
-            }
-        
-        .eservices section #ethree .headbutton{
-            left: 0;
-            }
-
-            .eservices section #efour{
-                display: block;
-                width: 80%;
-                height: 100%;
-                margin-left: 20%;
-                position: relative;
-                background-color: white;
-                border-radius: 20px;
-            
-            }
-        
-        
-            .eservices section #efour img {
-                left: 5%;
-                width: 45%;
-                }
-            
-            .eservices section #efour .headbutton{
-                right: 0;
-                }
 
     .eservices section #efive{
         display: block;
@@ -335,32 +360,237 @@ main{
     }
 
 
-    .eservices section #esix img {
+.eservices section #esix img {
+    left: 5%;
+    }
+
+.eservices section #esix .headbutton{
+    right: 0;
+
+}
+
+.eservices .headbutton>header{
+    font-size: 38px;
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+    .front{
+        height: 400px;
+    }
+
+    .front h1{
+        font-size: 40px;
+        width: 80%;
+    }
+
+    .front h1::first-letter{
+        font-size: 55px;
+    }
+
+    .front p{
+        font-size: 25px;
+        width: 40%;
+        font-weight: 700;
+        margin-top: 75px;
+    }
+
+    .store{
+        height: 850px;
+    }
+
+    .store section p span{
+        font-size: 28px;
+    }
+
+
+    .eservices header{
+        font-size: 35px;
+    }
+
+
+    .eservices section{
+        height: 250px;
+    }
+
+    .eservices .headbutton>header {
+        font-size: 30px;
+    }
+
+    .eservices {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+    .front{
+        height: 250px;
+    }
+
+    .front h1{
+        font-size: 35px;
+        width: 90%;
+        padding-top: 0;
+    }
+
+    .front h1::first-letter{
+        font-size: 45px;
+    }
+
+    .front p{
+        font-size: 18px;
+        width: 50%;
+        margin-top: 65px;
+    }
+
+    .store {
+        height: 1050px;
+    }
+
+    .store section{
+        position: relative;
+    }
+
+    .store section img{
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .store section p{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        height: 50%;
+    }
+
+    .store section p span {
+        font-size: 20px;
+    }
+
+    .store section p{
+        font-size: 12px;
+    }
+
+
+    .store section:last-child img{
+        height: 50%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .eservices section img {
+        width: 90%;
+        height: 45%;
+        top: 0;
         left: 5%;
-        }
+    }
+
+    .eservices section .headbutton {
+        width: 100%;
+        height: 50%;
+        top: 50%;
+    }
+
+    .eservices section .headbutton header {
+        margin-top: 2%;
+        height: 35%;
+        font-size: 25px;
+    }
+
+    .eservices section #eone{
+        width: 100%;
+    }
+
+    .eservices section #etwo{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .eservices section #ethree {
+        width: 100%;
+    }
+
+    .eservices section #ethree img {
+        right: 5%;
+        width: 90%;
+    }
+
+    .eservices section #efour{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .eservices section #efour img {
+        left: 5%;
+        width: 90%;
+    }
+
+    .eservices section #efive {
+        width: 100%;
+    }
+
+    .eservices section #esix {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .eservices {
+        width: 85%;
+    }
+
+    .eservices section {
+        height: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .front h1{
+        font-size: 30px;
+    }
+
+    .store section p {
+        font-size: 11px;
+    }
     
-    .eservices section #esix .headbutton{
-        right: 0;
-        }
+
+    .eservices {
+        width: 92%;
+    }
+}
+
+
+@media only screen and (max-width:370px){
+    .eservices {
+        width: 97%;
+    }
+}
 
 
   /* Slideshow container */
   .slideshow-container {
     box-sizing: border-box;
-    max-width: 1000px;
     overflow: hidden;
+    width: 100%;
     position: relative;
     margin: auto;
     background-color: #1A1A1A;
   }
   .slideshow-container header{
-      display: block;
-      width: 50%;
-      position: absolute;
-      font-weight: bolder;
-      top: 10px;
-      z-index: 1;
-      left: 0;
+    display: block;
+    width: 50%;
+    position: absolute;
+    font-weight: bolder;
+    top: 10px;
+    z-index: 1;
+    left: 0;
     text-align: center;
     font-size: 30px;
     margin-bottom: 10px;
@@ -369,7 +599,7 @@ main{
   /* Hide the images by default */
   .mySlides {
     display: none;
-    width: 100%;                 /* changed to vw */
+    width: 100vw;
     height: 400px;
     background-color: #FFE9C5;
   }
@@ -385,16 +615,16 @@ main{
 
   .mySlides img{
       position: absolute;
-      top: 0;
-      right: 0;
+      top: 2%;
+      right: 5%;
   }
 
 
   .mySlides p{
-      position: absolute;
-      left: 5%;
-      top: 30%;
-    width: 40%;
+    position: absolute;
+    left: 5%;
+    top: 30%;
+    width: 35%;
     float: right;
     display: block;
     padding-right: 20px;
@@ -412,11 +642,11 @@ main{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    transform: translateY(-50%);
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -468,12 +698,18 @@ main{
   }
 
 
+
+
+
+
+
   /* about our premium service section */
 
   .premium{
       margin-top: 50px;
       width: 100%;
-      height: 400px;
+      height: 420px;
+      margin-bottom: 100px;
       color: white;
       position: relative;
       background-color: #242121;
@@ -481,10 +717,10 @@ main{
 
   .premium img{
       width: 30%;
-      height: 500px;
+      height: 520px;
       position: absolute;
-      top: -23%;
-      left: 14.6%;
+      top: -21%;
+      left: 9.6%;
   }
 
   .premium section{
@@ -502,19 +738,88 @@ main{
       font-size: 40px;
       margin-right: 5%;
       padding-bottom: 10px;
+      text-align: left;
+  }
+
+  .premium section p{
+      margin-left: -50px;
   }
 
 
+
+
+@media only screen and (min-width: 1300px){
+
+    .eservices{
+        width: 85%;
+    }
+    
+    .eservices header{
+        font-size: 51px;
+    }
+    .eservices section{
+        height: 350px;
+    }
+    .eservices section .headbutton header {
+        margin-top: 15%;
+        height: 40%;
+        font-weight: 900;
+    }
+    
+    .mySlides{
+        height: 500px;
+    }
+    
+    .slideshow-container header{
+        font-size: 51px;
+        font-weight: 900;
+        width: 35%;
+        left: 3%;
+    }
+    
+    .mySlides p span {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .mySlides p{
+        font-size: 16px;
+    }
+    
+    .prev, .next {
+        font-size: 45px;
+    }
+
+    .premium section header{
+        font-size: 51px;
+    }
+
+
+    .premium section p{
+        margin-left: -70px;
+        margin-top: 50px;
+    }
+
+    .premium section{
+        width: 60%;
+    }
+
+    .premium img{
+        width: 35%;
+        left: 12.1%;
+
+    }
+  
+}
+
+ 
 
 
   /* platform we serve section */
 
   .platform{
       width: 100%;
-      height: 820px;
-      flex-wrap: wrap;
-      display: flex;
-      justify-content: space-evenly;
+      height: 950px;
       background-image: url('../images/4.ECOMMERCE/platform\ we\ serve\ background.png');
       background-size: 100% 100%;
   }
@@ -522,25 +827,35 @@ main{
   .platform header{
       display: block;
       width: 100%;
-      font-size: 51px;
+      font-size: 57px;
+      font-weight: bolder;
       text-align: center;
   }
+
+  .platform section{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+  }
+
 
 
   .platform img{
       margin: 20px;
-      min-width: 190px;
-      width: 210px;
-      height: 150px;
-      
+      width: 150px;     
   }
 
 
+ 
+   
 
   /* someting about us section */
 
   .aboutour{
-    margin-top: 50px;
+    margin-top: 100px;
     width: 100%;
     margin-bottom: 10px;
     color: white;
@@ -566,7 +881,7 @@ main{
   .aboutour section p{
       display: block;
       margin: 10px auto;
-      width: 70%;
+      width: 75%;
       font-size: 16px;
       text-align: center;
   }
@@ -577,14 +892,193 @@ main{
   }
 
 
+  @media only screen and (max-width: 800px){
+    .slideshow-container header{
+        font-size: 28px;
+    }
+
+    .mySlides p {
+        font-size: 16px;
+        width: 42%;
+    }
+
+    .premium section header {
+        font-size: 35px;
+    }
+
+    .premium img{
+        top: -24%;
+        left: 4.6%;
+        width: 40%;
+    }
+
+    .platform header{
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .platform img {
+        margin: 15px;
+    }
+
+    .platform{
+        height: auto;
+    }
+
+    .aboutour section p{
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .slideshow-container header {
+        font-size: 17px;
+    }
+
+    .mySlides p {
+        font-size: 11px;
+        width: 48%;
+        left: 1%;
+    }
+
+    .mySlides p span {
+        font-size: 18px;
+    }
+
+    .mySlides{
+        height: 300px;
+    }
+
+    .prev, .next {
+        padding: 5px;
+    }
+
+    .mySlides img {
+        right: 3%;
+    }
+
+    .premium section header {
+        font-size: 21px;
+    }
+
+    .premium section p{
+        font-size: 11px;
+        margin-left: -30px;
+    }
+
+    .premium{
+        height: 300px;
+    }
+
+    .premium img {
+        width: 35%;
+        height: 370px;
+        top: -24%;
+        left: 6.9%;
+    }
+
+    .platform header {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .aboutour header{
+        font-size: 28px;
+    }
+
+    .aboutour section p{
+        font-size: 11px;
+    }
+
+    .aboutour section p {
+        width: 90%;
+    }
+
+    .aboutour section{
+        padding-top: 25px;
+    }
+
+  }
+
+  @media only screen and (max-width:400px){
+    .slideshow-container header {
+        font-size: 15px;
+    }
+
+    .mySlides p {
+        font-size: 10px;
+        width: 50%;
+    }
+
+    .mySlides p span {
+        font-size: 14px;
+    }
+
+    .premium section header {
+        font-size: 18px;
+    }
+
+    .platform img {
+        margin: 10px;
+    }
+
+    .aboutour section {
+        padding-top: 20px;
+    }
+
+    .aboutour section p {
+        width: 95%;
+    }
+
+    .aboutour header {
+        font-size: 27px;
+    }
+
+    .aboutour section p span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+  }
+
+
+  @media only screen and (max-width:350px){
+    .slideshow-container header {
+        font-size: 14px;
+    }
+
+    .mySlides p {
+        font-size: 9px;
+        width: 50%;
+    }
+
+    .mySlides p span {
+        font-size: 12px;
+    }
+
+    .premium section header {
+        font-size: 15px;
+    }
+
+    .premium section p {
+        font-size: 9px;
+        margin-left: -25px;
+    }
+
+    .platform header {
+        font-size: 21px;
+        margin-bottom: 20px;
+    }
+  }
+
+
   /* our team is always with you section */
 
   .ourteam{
       width: 100%;
-      margin-top: 40px;
+      margin-top: 100px;
       color: white;
       background-color: #242121;
-      height: 420px;
+      height: 450px;
       position: relative;
   }
 
@@ -594,15 +1088,17 @@ main{
       font-size: 16px;
       line-height: 16px;
       position: absolute;
-      left: 2%;
+      left: 3%;
       height: 100%;
       top: 0;
 
   }
 
   .ourteam p span{
-      font-size: 35px;
+      font-size: 45px;
       font-weight: bold;
+      display: block;
+      margin-bottom: 20px;
   }
 
   .ourteam img{
@@ -613,6 +1109,9 @@ main{
       right: 0;
 
   }
+
+
+
 
 
   /* our ecommerce account management section */
@@ -649,6 +1148,35 @@ main{
       line-height: 45px;
       font-weight: bolder;
   }
+
+
+  @media only screen and (min-width:1300px){
+    .platform section{
+        width: 90%;
+        height: 95%;
+    }
+
+    .platform img{
+        margin: 30px;
+    }
+
+    .ourteam p{
+        left: 12.8%;
+        top: 20px;
+    }
+
+    .ourteam{
+        height: 500px;
+    }
+
+    .ourteam p span{
+        font-size: 51px;
+    }
+
+    .ecomacount p span{
+        font-size: 51px;
+    }
+}
 
 
   /* How is our Ecommerce management different section */
@@ -792,11 +1320,12 @@ main{
 }
 
 
+
 /* ECOM WHY COOSE US SECTION  */
 
 .eWHYUS{
     width: 100%;
-    margin-top: 50px;
+    margin-top: 100px;
     color: white;
 }
 
@@ -810,18 +1339,19 @@ main{
 
 .eWHYUS .ewhyussection{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
     margin: 50px auto;
     width: 90%;
-    height: 400px;
-
 }
 
 .eWHYUS .ewhyussection section{
     width: 19%;
+    min-width: 120px;
     display: block;
-    height: 100%;
+    height: 400px;
     position: relative;
-    margin-right: 1%;
 }
 
 .eWHYUS .ewhyussection section img{
@@ -844,10 +1374,7 @@ main{
     height: 50%;
     text-align: center;
     line-height: 18px;
-}
-
-
-
+}  
 
 
 
@@ -1023,3 +1550,344 @@ main{
   .contactus button a:hover::after{
     transform: scaleY(1);
   }
+
+
+  @media only screen and (min-width:1300px){
+    .eWHYUS .ewhyussection{
+        width: 75%; 
+    }
+
+    .howsection header{
+        font-size: 51px;
+    }
+
+    .contactus{
+        height: 500px;
+    }
+
+    .contactus button{
+        bottom: 12%;
+        left: 30%;
+    }
+
+    .contactus h3 {
+        width: 36%;
+    }
+
+    .contactus p {
+        display: block;
+        width: 40%;
+    }
+} 
+
+
+/* tablet view */
+
+@media only screen and (max-width:800px){
+    .ourteam p span {
+        font-size: 35px;
+    }
+
+    .ourteam p{
+        width: 62%;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .ecomacount p span {
+        font-size: 24px;
+        line-height: 27px;
+        font-weight: bolder;
+    }
+
+    .ecomacount p{
+        font-size: 15px;
+        line-height: 18px;
+        left: 5%;
+    }
+
+    .ecomacount{
+        height: 600px;
+    }
+
+    .howsection header{
+        width: 95%;
+        font-size: 35px;
+    }
+
+    .howsection section span {
+        font-size: 25px;
+        height: 40px;
+    }
+
+    .howsection section .ecomhow-one p{
+        font-size: 16px;
+    }
+
+    .howsection section .ecomhow-two p{
+        font-size: 16px;
+    }
+
+    .howsection section .ecomhow-three p{
+        font-size: 16px;
+    }
+
+    .howsection section .ecomhow-four p{
+        font-size: 16px;
+    }
+
+
+    .contactus p span {
+        font-size: 45px;
+    }
+
+    .contactus p{
+        font-size: 24px;
+    }
+
+    .contactus h3{
+        font-size: 28px;
+    }
+}
+
+
+/* large screen mobile view */
+
+@media only screen and (max-width: 500px){
+    .ourteam{
+        height: 310px;
+    }
+
+    .ourteam p span {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .ourteam p{
+        width: 59%;
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .ecomacount p span {
+        font-size: 18px;
+        line-height: 20px;
+        /* font-weight: bolder; */
+    }
+
+    .ecomacount p {
+        font-size: 12px;
+        line-height: 15px;
+        width: 80%;
+        left: 3%;
+    }
+
+    .ecomacount {
+        height: 500px;
+    }
+
+    .eWHYUS .ewhyussection section p{
+        font-size: 14px;
+    }
+
+    .eWHYUS header {
+        font-size: 45px;
+    }
+
+    .eWHYUS .ewhyussection section{
+        margin: 10px;
+        height: 300px;
+        min-width: 125px;
+    }
+
+    .ewhyussection{
+        margin: 30px auto;
+    }
+
+
+    .howsection section{
+        flex-direction: column;
+        height: 600px;
+        margin-bottom: 2px;
+        border-bottom: 2px solid black;
+    }
+
+    .howsection section .ecomhow-one{
+        width: 100%;
+        height: 50%;
+    }
+
+    .howsection section .ecomhow-two{
+        width: 100%;
+        height: 50%;
+    }
+
+    .howsection section .ecomhow-three{
+        width: 100%;
+        height: 50%;
+    }
+
+    .howsection section .ecomhow-four{
+        width: 100%;
+        height: 50%;
+    }
+
+    .contactus p span {
+        font-size: 35px;
+    }
+
+    .contactus p {
+        font-size: 16px;
+    }
+
+    .contactus h3 {
+        font-size: 18px;
+    }
+
+    .contactus button a{
+        font-size: 16px;
+    }
+
+    .contactus{
+        height: 300px;
+    }
+    
+}
+
+/* medium screen mobile view */
+
+@media only screen and (max-width: 400px){
+    .ourteam {
+        height: 320px;
+    }
+
+    .ourteam p span {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .ourteam p{
+        width: 60%;
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .ecomacount p span {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .ecomacount p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .ecomacount {
+        height: 480px;
+    }
+
+    .eWHYUS .ewhyussection section p {
+        font-size: 13px;
+        text-align: justify;
+    }
+
+    .eWHYUS .ewhyussection section{
+        height: 250px;
+    }
+
+    .howsection header {
+        font-size: 25px;
+    }
+
+    .howsection section span {
+        font-size: 18px;
+        height: 25px;
+    }
+
+    .howsection section .ecomhow-one p{
+        font-size: 14px;
+    }
+
+    .howsection section .ecomhow-two p{
+        font-size: 14px;
+    }
+
+    .howsection section .ecomhow-three p{
+        font-size: 14px;
+    }
+
+    .howsection section .ecomhow-four p{
+        font-size: 14px;
+    }
+
+    .howsection section{
+        flex-direction: column;
+        height: 500px;
+    }
+
+
+    .contactus p span {
+        font-size: 28px;
+    }
+
+    .contactus p {
+        font-size: 14px;
+    }
+
+    .contactus h3 {
+        font-size: 16px;
+    }
+
+    .contactus button a {
+        font-size: 14px;
+    }
+
+    .contactus button{
+        bottom: 10%;
+        left: 30%;
+    }
+
+    .contactus {
+        height: 250px;
+    }
+}
+
+/* small screen  mobile view */
+
+@media only screen and (max-width: 360px){
+    .ourteam {
+        height: 300px;
+    }
+
+    .ourteam p {
+        width: 64%;
+        font-size: 8px;
+    }
+
+    .ecomacount p {
+        font-size: 9px;
+        line-height: 12px;
+    }
+
+    .ecomacount {
+        height: 430px;
+    }
+
+    .ecomacount p span {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .eWHYUS .ewhyussection section p {
+        font-size: 12px;
+        text-align: justify;
+    }
+
+    .eWHYUS header {
+        font-size: 35px;
+    }
+
+    .contactus p {
+        font-size: 12px;
+    }
+}
